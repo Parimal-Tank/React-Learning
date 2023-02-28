@@ -25,13 +25,9 @@ class LoginControl extends React.Component{
         let button;
 
         // console.log('This is Value of Is Login'+ isLoggedIn);
-
-        if(isLoggedIn){
-            button = <LogoutButton onClick={this.handleLogoutClick}  />
-        } else {
-            
-            button = <LoginButton onClick={this.handleLoginClick} />
-        }
+        // Using Ternary Conditon
+        isLoggedIn ? button = <LogoutButton onClick={this.handleLogoutClick}  /> : button = <LoginButton onClick={this.handleLoginClick} />
+    
 
         return(
             <div>
@@ -70,7 +66,7 @@ const LogoutButton = (props) =>{
     )
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root')); 
-root.render(<LoginControl />);
+// const root = ReactDOM.createRoot(document.getElementById('root')); 
+// root.render(<LoginControl />);
 
 export default LoginControl
