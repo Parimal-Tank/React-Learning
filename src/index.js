@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MailBox from './MailBox';
-import LoginControl from './LoginControl';
-import List from './List';
-import Forms from './Forms';
+// import MailBox from './MailBox';
+// import LoginControl from './LoginControl';
+// import List from './List';
+// import Forms from './Forms';
+import Counter from './Counter';
+import Example from './Example';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +16,9 @@ root.render(
      {/*  <LoginControl /> */} 
      { /* <MailBox /> */} 
      { /* <List/> */}
-     <Forms />
+      {/* <Counter />*/}
+     { /*<Forms /> */}
+     <Example />
   </React.StrictMode>
 );
 
